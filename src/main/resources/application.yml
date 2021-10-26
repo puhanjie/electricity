@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: true
+
+electricity:
+  api-package: com.puhj.electricity.api
+  year-codes: A,B,C,D,E,F,G,H,I,J,K,L
+
+wx:
+  appid: wxae8ab792c51cd40c
+  appsecret: 03ed858cf25d4de860484f1728a43547
+  code2session: https://api.weixin.qq.com/sns/jscode2session?appid={0}&secret={1}&js_code={2}&grant_type=authorization_cod
